@@ -22,14 +22,14 @@ loop {
 
     //import the standard libary 
     //tools created by rust
+    //this creates the user input field in the terminal and binds it to guess
     io::stdin()
 
-    //this creates the user input field in the terminal and binds it to guess
-        .read_line(&mut guess) 
         //&mut guess is shared referneces meaining its not creating a new value of anything
         //it is referencing the value without copying 
         //so its basically just pointing at it saying "change this"
         //only one &mut guess (changable) can exist at a time but multiple &guess (non-changeable) can exist
+        .read_line(&mut guess) 
 
         //readline also returns an result value(enum) with is sucess type/variant and error type/variant
         //in case of failure/error type it will return this
