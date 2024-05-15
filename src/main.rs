@@ -22,9 +22,10 @@ loop {
 
     //import the standard libary 
     //tools created by rust
-    //this creates the user input field in the terminal and binds it to guess
+    //this creates the user input field in the terminal
     io::stdin()
 
+        //This line read the input from the temrinal and binds it to guess
         //&mut guess is shared referneces meaining its not creating a new value of anything
         //it is referencing the value without copying 
         //so its basically just pointing at it saying "change this"
